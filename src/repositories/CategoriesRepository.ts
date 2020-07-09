@@ -9,8 +9,6 @@ class CategoriesRepository extends Repository<Category> {
       where: { title },
     });
 
-    console.log(title);
-    console.log(findCategory);
     if (findCategory) {
       return findCategory.id;
     }

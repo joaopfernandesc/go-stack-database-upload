@@ -22,7 +22,6 @@ class ImportTransactionsService {
       .select(['categories.title, categories.id'])
       .getRawMany();
 
-    console.log('Categories:', categories);
     const categoriesId: Record<string, any> = {};
 
     const parseCsv = fs
